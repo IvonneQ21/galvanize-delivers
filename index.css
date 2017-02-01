@@ -1,0 +1,12 @@
+body #index-banner {
+  background: url("./img/hero.jpg") center center no-repeat;
+  padding-top: 10px;
+  position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }

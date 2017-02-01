@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Order Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="galdelivery.css">
+    <link rel="submitssionForm" href="submitssionForm.html"></link>
+    <link rel="orders_page_style" href="index.css"></link>
+
+  </head>
+
+  <body>
+    <nav class ="#1565c0 blue darken-3">
+      <div class="nav-wrapper container">
+        <a class="restaurant_logo" href="index.html">Galvanize delivery</a>
+
+        <ul class="right hide-on-med-and-down">
+         <li><a href="#" >Order Delivery</a></li>
+        </ul>
+
+      </div>
+    </nav>
+      <main class="container">
+        <div class="row">
+          <div name="left-hand side" class="col s6 m6 l6">
+            <h4>Menu</h4>
+          <div class="col s12 m6">
+            <div class="card s6 m6 l6">
+               <div class="card-image">
+                  <img src="img/burger.jpg" alt="burger">
+               </div>
+            <div class="card-content">
+              <span class="card-title ">Royale with Cheese</span>
+              <p>$8.99</p>
+            </div>
+              <div class="card-action">
+                <button type="button" class="addToCart white lighten-4 btn" name="burger" value="8.99"><a href="#">Add Item</a></button>
+              </div>
+            </div>
+          <div class="card s6 m6 l6">
+            <div class="card-image">
+              <img src="img/pizza.jpg" alt="pizza">
+            </div>
+          <div class="card-content">
+              <span class="card-title ">Arugula Pie</span>
+                <p>$11.99</p>
+          </div>
+          <div class="card-action">
+            <button type="button" class="addToCart white lighten-4 btn" name="arugula_pie" value="11.99"><a href="#">Add Item</a></button>
+          </div>
+          </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card s6 m6 l6">
+              <div class="card-image">
+                <img src="img/ribs.jpg" alt="Ribs">
+              </div>
+            <div class="card-content">
+              <span class="card-title ">Smoked Swine</span>
+              <p>$14.99</p>
+            </div>
+              <div class="card-action">
+                <button type="button" class="addToCart white lighten-4 btn" name="swine" value="14.99"><a href="#">Add Item</a></button>
+              </div>
+          </div>
+          <div class="card s6 m6 l6">
+            <div class="card-image">
+              <img src="img/ice_cream.jpg" alt="Ice_Cream">
+            </div>
+          <div class="card-content">
+            <span class="card-title">Ice Cream Biscuit</span>
+            <p>$7.99</p>
+          </div>
+          <div class="card-action">
+            <button type="button" class="addToCart white lighten-4 btn" name="ice_cream" value="7.99"><a href="#">Add Item</a></button>
+          </div>
+          </div>
+          </div>
+        </div>
+      <div name="right-hand side" class="col s12 m8 l5">
+          <h4>Order</h4>
+        <table id="table" class="striped">
+          <thead>
+            <tr>
+              <th data-field="id">Item</th>
+              <th class="right align" data-field="price">Item Price</th>
+            </tr>
+          </thead>
+        </table>
+        <section>
+           <div class="row summary"></div>
+           <div class="col s9 m9 l9">
+             <div>Subtotal</div>
+             <div>Tax</div>
+             <div>Total</div>
+           </div>
+           <div class="col s3 m3 l3">
+             <div id="subtotal">$0.00</div>
+             <div id="tax">$0.00</div>
+             <div id="grand_total">$0.00</div>
+           </div><br><br>
+        </section><br><br>
+
+         <form action="submissionForm.html" method="post" onsubmit="return check_info();">
+           <div class="input-field col s12">
+             <i class="material-icons prefix">account_circle</i>
+             <input id="name" type="text" name="Order-Name" placeholder="Placeholder" value="" class="validate" required>
+             <label for="Order-Name">Name</label>
+           </div>
+           <div class="input-field col s12">
+             <i class="material-icons prefix">phone</i>
+             <input  id="phone" type="text" name="Phone" placeholder="Placeholder" value="" class="validate" required>
+             <label for="Phone">Phone Number</label>
+           </div>
+           <div class="input-field col s12">
+             <i class="material-icons prefix">business</i>
+             <input id="address"  type="text" name="Address" placeholder="Placeholder" value="" class="validate" required>
+             <label for="Address">Address</label>
+           </div>
+           <div class="row center">
+             <button type="submit" name="placeOrder" class="blue lighten-2 btn" required>Place Order</button>
+           </div>
+         </form>
+        </div>
+      </div>
+
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js">
+    </script>
+
+
+  </body>
+  <footer class="#1565c0 blue darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s6">
+
+        <h5 class="white-text">Galvanize Delivers</h5>
+        <h6 class="white-text">Fine Dining, Delivered.</h6>
+
+        <!-- h5 class="white-text"><a href="index.html">© Galvanize Delivers</a></h5> -->
+      </div>
+      <div class="col s6 hide-on-med-and-down">
+        <ul>
+          <li>
+            <a href="index.html" class="white-text">Home</a>
+          </li>
+          <li>
+            <a href="order.html" class="white-text">Order Delivery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <foot class="#1565c0 blue darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col s6">
+            <p class="grey-text">© Galvanize Delivers</p>
+      </div>
+    </foot>
+<br></footer>
+
+<script type="text/javascript" src = "gdeliver.js"></script>
+<script type="text/javascript"  src= "orders.js"></script>
+
+</html>

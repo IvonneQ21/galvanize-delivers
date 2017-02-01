@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang ="en">
+ <head>
+   <title></title>
+   <script type="text/javascript">
+
+    function check-info() {
+      var name= document.getElementById('name').value;
+      // this meand that the var name  is going to be equal to the value.
+      var phone= document.getElementById('phone').value;
+      var address= document.getElementById('address').value;
+      if(name =="" || phone == "" || address == ""){
+          alert('please fill in all fields');
+          return false;
+      }
+    } else {
+      return true;
+    }
+
+    </script>
+ </head>
+<body>
+  <!-- <h1>JS Fform validatio</h1> -->
+    <form action="submissionForm.html" method="post" onsubmit="return check_info();" >
+      name:<input type="text" name="username" id="name"/>
+      phone:<input type="phone" name="phone" id="phone"/>
+      address: <input type="address" name="address" id="address"/>
+</body>
+</html>
